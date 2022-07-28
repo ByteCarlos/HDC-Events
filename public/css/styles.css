@@ -241,6 +241,13 @@ header {
     margin-right: 10px;
 }
 
+/* Edit page */
+
+.img-preview {
+    width: 100px;
+    margin-top: 20px;
+}
+
 /* footer */
 
 footer {
