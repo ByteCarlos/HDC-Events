@@ -61,7 +61,9 @@
             <div class="container-fluid">
                 <div class="row">
                     @if(session('msg'))
-                        <p class="msg">{{ session('msg') }}</p>
+                        <p class="msg">{{ session('msg') }}</p>    
+                    @elseif(session('msg_error'))
+                        <p class="msg_error"><ion-icon name="alert-circle-outline" style="margin-right: 10px;"></ion-icon>{{ session('msg_error') }}</p>  
                     @endif
                     @yield('content')
                 </div>
